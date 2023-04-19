@@ -1,5 +1,5 @@
 <?php
-   define("CURSO", "PHP 8");
+   define("CURSO", "PHP 8.");
 
     echo CURSO;
 ?>
