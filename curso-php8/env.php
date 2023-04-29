@@ -1,7 +1,7 @@
 <?php
 
 
-var_dump($_ENV["COMPUTERNAME"]);
+var_dump($_ENV["COMPUTERNAMEPHP "]);
 
 
 ?>
