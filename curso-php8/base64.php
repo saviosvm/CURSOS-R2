@@ -1,9 +1,9 @@
 <?php
 
-$msg = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum reprehenderit magnam, hic cum nam quo sint assumenda impedit sapiente quasi eaque veniam saepe exercitationem earum iure facere minima ad doloremque.";
+$msg = "savio";
 
-echo strlen($msg);
 
-echo base64_encode($msg);
+echo base64_encode($msg) . "\n" . "<br>";
+echo base64_decode("c2F2aW8=ͅ٥");
 
 ?>
