@@ -1,8 +1,8 @@
 <?php
 
-$frutas = ["tropical" => "maçã", "banana", "bacaxi"];
+$frutas = [ "maçã", "banana", "bacaxi"];
 
-$outrasfrutas = ["limão", "melancia", "tropical" => "morango"];
+$outrasfrutas = ["limão", "melancia", "morango"];
 
 
 var_dump(array_merge($frutas, $outrasfrutas));
