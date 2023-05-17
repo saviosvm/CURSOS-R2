@@ -6,16 +6,22 @@ $cep = "76330-000";
 $curl = curl_init();
 
 
-curl_setopt($curl, CURLOPT_URL, "https://viacep.com.br/ws/{$cep}/json/");
+curl_setopt($curl, CURLOPT_URL, "http://localhost:81/curso-php8/post.php");
 
-curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+$dados = [
+   
+    "nome" => "savio",
+    "email" => "savio@hotmail.com"
+
+];
+
+curl_setopt($curl, CURLOPT_POST, true);
+curl_setopt($curl, CURLOPT_POSTFIELDS, $dados);
 
 $resposta = curl_exec($curl);
 
 curl_close($curl);
 
-$dados = json_decode($resposta, true);
 
-echo $dados['localidade'];
+echo $resposta;
 ?>
