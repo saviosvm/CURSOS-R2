@@ -16,7 +16,8 @@ $dados = [
 ];
 
 curl_setopt($curl, CURLOPT_POST, true);
-curl_setopt($curl, CURLOPT_POSTFIELDS, $dados);
+curl_setopt($curl, CURLOPT_POSTFIELDS, true);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, $dados);
 
 $resposta = curl_exec($curl);
 

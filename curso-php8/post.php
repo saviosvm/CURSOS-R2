@@ -1,6 +1,11 @@
 <?php
 
-var_dump($_SERVER["REQUEST_METHOD"]);
+echo "Solicitação via: ". $_SERVER["REQUEST_METHOD"];
 echo "<br>";
-var_dump($_POST);
+echo "Seu nome é: ".  $_POST["nome"];
+echo "<br>";
+echo "Seu email é: ".  $_POST["email"];
+
+
+
 ?>
