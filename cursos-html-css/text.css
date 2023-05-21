@@ -1,0 +1,8 @@
+.botao{
+    color: green;
+    font-size: 14px;
+    border: none;
+    padding: 10px 20px;
+    border-bottom: 3px solid blue;
+    margin: 30px 10px;
+}
