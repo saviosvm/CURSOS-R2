@@ -6,3 +6,25 @@
     border-bottom: 3px solid blue;
     margin: 30px 10px;
 }
+
+h4{
+    color: red;
+}
+
+h1.titulo{
+    font-style: italic;
+    font-size: 18pt;
+    color: blue;
+}
+
+#titulo{
+    font-style: italic;
+    font-size: 18pt;
+    color: green;
+}
+
+.padrao{
+    font-size: 30px;
+    font-family: arial;
+    color: blueviolet;
+}
