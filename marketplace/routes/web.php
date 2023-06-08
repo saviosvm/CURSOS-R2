@@ -44,6 +44,18 @@ Route::get('/model', function(){
 //]);
 
 
+//$user = \App\Models\User::find(4);
 
+//dd($user->store()->count());
+
+//pegar os prodtos de uma loja
+//$loja = \App\Models\Store::find(1);
+
+//return $loja->products()->where('id', 1)->get();
+
+$categoria = \App\Models\Category::find(1);
+return $categoria->products;
+
+return \App\Models\User::all();
     
 });
