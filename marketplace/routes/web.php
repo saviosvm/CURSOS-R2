@@ -53,9 +53,32 @@ Route::get('/model', function(){
 
 //return $loja->products()->where('id', 1)->get();
 
-$categoria = \App\Models\Category::find(1);
-return $categoria->products;
+//$categoria = \App\Models\Category::find(1);
+//return $categoria->products;
 
-return \App\Models\User::all();
+//return \App\Models\User::all();
+
+//criar uma loja para um uuario
+/*
+$user = \App\Models\User::find(10);
+$store = $user->store()->create([
+  'nome' => 'loja teste',
+  'descricao' => 'loja teste de produtos de informatica',
+  'telefone' => 'xx-xxxxx-xxxx',
+  'celular' => 'xx-xxxxx-xxxx',
+  'slug' => 'loja-teste',
+]); */
+
+//criar um produto para uma loja
+$store = \App\Models\Store::find(41);
+$produto = $store->products()->create([
+  'nome' => 'Notbook',
+  'descricao' => 'core i9',
+ 'body' => 'fasdfasdf',
+  'preco' => 8524.50,
+  'slug' => 'notbook-dell',
+]);
+
+dd($produto);
     
 });

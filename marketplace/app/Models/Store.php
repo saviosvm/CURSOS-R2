@@ -10,7 +10,7 @@ class Store extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nome', 'description', 'telefone', 'celular,', 'slug'];
+    protected $fillable = ['nome', 'descricao', 'telefone', 'celular', 'slug'];
 
 
     public function user(){ // 1 loja pertence a 1 usuario
